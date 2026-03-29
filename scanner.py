@@ -1,8 +1,9 @@
 import socket
-
+start = int(input("Start port: "))
+end = int(input("End port: "))
 target = input("Enter target (IP or website): ")
 
-ports = [21, 22, 80, 443]
+for port in range(1, 101):
 
 print(f"\nScanning {target}...\n")
 
