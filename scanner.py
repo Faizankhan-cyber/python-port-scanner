@@ -14,6 +14,5 @@ for port in ports:
     result = s.connect_ex((target, port))
     
     if result == 0:
-        print(f"Port {port} is OPEN")
-    
+        print(f"[OPEN] Port {port}")
     s.close()
